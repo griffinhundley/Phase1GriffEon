@@ -1,84 +1,52 @@
-# Title
+# Risky Business:
+#### An Exploration of Risk in the Movie Industry
 
-**Authors**: Student1, Student2
+## Authors: Griffin Hundley and Eon Slemp
 
-## Overview
+### Overview
+#### The movie industry generates about 40 billion dollars of revenue annually.  That number is expected to continue to grow over the next several years.  The hazards of this market are many.  Analysis of the profitability of movie shows a distribution that is highly skewed in the direction of financial loss.  This work seeks to reduce risk for a potential entrant to this industry
 
-A one-paragraph overview of the project, including the business problem, data, methods, results and recommendations.
+!['typical distribution of financial return for movies'](images/hist-bgr.png)
 
-## Business Problem
+### Business Problem
+#### Microsoft is considering an entry to this industry.  There is wide variation in expected financial return depending on the genre of movie.  To reduce the potential danger with such a move, Microsoft needs an exploratory analysis of profitabilty as it relates to movie genre. Different movie genres offer very different financial oportunities.  Some genres offer the ability to multiply a a small initial investment, but an actor with deeper pockets can gamble big and win big in other genres.  Film production in these different genre categories are very different fincancial and creative projects.  
 
-Summary of the business problem you are trying to solve, and the data questions that you plan to answer in order to solve them.
+### Data
+#### The data used for this analysis come from two data sets.  A data set from the 'The Numbers' website provides financial data relating to the world wide gross and production budget of the film.  And a data set from 'imbd' provides detailed genre information.  These two data sets are merged with a bias towards movies produced in the last twenty years to give a better feel for contemporary taste in cinema.  
 
-***
-Questions to consider:
-* What are the business's pain points related to this project?
-* How did you pick the data analysis question(s) that you did?
-* Why are these questions important from a business perspective?
-***
+!['variation of expected return by genre'](images/boxplot-wgross.png)
 
-## Data
+### Methods
+####  This analysis gives insight into expected return across 16 pure and hybrid genre categories.  Some offer high investment with the potential for huge profit.  Others offer more modest profit for lower investment.  We identify the mean expected revenue and interquartile range of return in these genres as a multiple of production budget. we also look at revenue totals across these genre categories. These two views of the movie business reveal the differing nature of operating in different genre categories.  
 
-Describe the data being used for this project.
-
-***
-Questions to consider:
-* Where did the data come from, and how do they relate to the data analysis questions?
-* What do the data represent? Who is in the sample and what variables are included?
-* What is the target variable?
-* What are the properties of the variables you intend to use?
-***
-
-## Methods
-
-Describe the process for analyzing or modeling the data. For Phase 1, this will be descriptive analysis.
-
-***
-Questions to consider:
-* How did you prepare, analyze or model the data?
-* Why is this approach appropriate given the data and the business problem?
-***
-
-## Results
-
-Present your key results. For Phase 1, this will be findings from your descriptive analysis.
-
-***
-Questions to consider:
-* How do you interpret the results?
-* How confident are you that your results would generalize beyond the data you have?
-***
-
-Here is an example of how to embed images from your sub-folder:
-
-### Visual 1
-![graph1](./images/viz1.png)
+### Results
+#### The genre that offers the most potential for revenue is clearly is clearly the science fiction/action, adventure/comedy, and adventure/fantasy categories.  These Genres also cost the most to invest in.  The genre with the most potential to multiply a small investment is horror/mystery thriller.  These films are cheap to produce, but if they find an audience can multiply initial investment several times over.  Pure drama, comedy, or romance offer a safer bet, but less potential for huge gain. 
 
 ## Conclusions
+#### based on the revealed highly skewed nature of profit in the movie business an entrant needs to tread carefully.  The benefits of a movie studio can transcend, in difficult to quantify ways, considerations of mere financial gain.  Cinema is a cultural force that can shape attitudes of millions of people.  Furthermore cinema offers merchandising opportunities for items related to a popular film.  These returns can dwarf the box office returns of a film.  These considerations are not treated here. 
+### The decision maker must select the genre of film he wishes to produce with risk in mind.
+#### How much loss can a studio sustain?  This decision will determine the size of the budget and necessariliy the genre.  We identify three main paths forward:  1.  Highly risky science fiction and action productions that offer huge upside.  2.  Less risky romance or comedy movies that can reliably generate modest returns, or 3.  Low investment but potential huge returns on a movie in the horror/thriller genre.  
+### An executive must seek service from talented artists, and producers to maximize odds for success. 
+#### A talent recruitment/development program can identify young, capable artists before they will be able to command huge salaries can reduce initial investment and increase the odds of a highly profitable movie. 
 
-Provide your conclusions about the work you've done, including any limitations or next steps.
+## Next Steps:
+#### In the future it might be usefull to do analyses on traits of highly succesfull directors.  The director is the principal creative agent of a film.  Carefully selecting skilled directors is the most important personell decision that a studio makes.  This analysis deserves special time and attention.  
 
-***
-Questions to consider:
-* What would you recommend the business do as a result of this work?
-* What are some reasons why your analysis might not fully solve the business problem?
-* What else could you do in the future to improve this project?
-***
 
 ## For More Information
 
-Please review our full analysis in [our Jupyter Notebook](./dsc-phase1-project-template.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
+## Please review our full analysis in [our Jupyter Notebook](FinalNotebook.ipynb) 
 
-For any additional questions, please contact **name & email, name & email**
+
+
+## For any additional questions, please contact Griffin Hundley at hundlegq@dukes.jmu.edu or Eon Slemp at eonslemp@gmail.com
 
 ## Repository Structure
 
-Describe the structure of your repository and its contents, for example:
-
 ```
 ├── README.md                           <- The top-level README for reviewers of this project
-├── dsc-phase1-project-template.ipynb   <- Narrative documentation of analysis in Jupyter notebook
-├── DS_Project_Presentation.pdf         <- PDF version of project presentation
+├── FinalNotebook.ipynb   <- Narrative documentation of analysis in Jupyter notebook
+├── FInalNotebook.pdf         <- PDF version of project presentation
 ├── data                                <- Both sourced externally and generated from code
 └── images                              <- Both sourced externally and generated from code
 ```
