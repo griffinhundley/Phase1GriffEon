@@ -95,3 +95,50 @@ def make_gross_boxplot(data, indices):
     return
 
 
+def make_time_bar(data, indices):
+    alltime = data
+    d2010 = alltime.loc[alltime.release_date >= 2010]
+    d2000 = alltime.loc[(alltime.release_date < 2010)&(alltime.release_date >= 2000)]
+    d1990 = alltime.loc[(alltime.release_date < 2000)&(alltime.release_date >= 1990)]
+    
+    alltimegrossmedian = alltime.groupby('genres').net_profit.median()
+    d2010grossmedian = d2010.groupby('genres').net_profit.median()
+    d2000grossmedian = d2000.groupby('genres').net_profit.median()
+    d1990grossmedian = d1990.groupby('genres').net_profit.median()
+
+    alltimedata = alltimegrossmedian[indices]
+    d2010data = d2010grossmedian[indices]
+    d2000data = d2000grossmedian[indices]
+    d1990data = d1990grossmedian[indices]
+
+    N = len(indices)
+
+    ind = np.arange(N)  # the x locations for the groups
+    width = 0.20       # the width of the bars
+
+    fig = plt.figure(figsize=(14,6))
+    ax = fig.add_subplot(111)
+    rects1 = ax.bar(ind, alltimedata, width, color='darkred')
+    rects2 = ax.bar(ind+width, d2010data, width, color='red')
+    rects3 = ax.bar(ind+width*2, d2000data, width, color='salmon')
+    rects4 = ax.bar(ind+width*3, d1990data, width, color='peachpuff')
+
+
+    ax.set_ylabel('Median Gross', fontsize = 24)
+    ax.set_title('Median Gross', fontsize = 30)
+    ax.set_xticks(ind + width)
+    ax.set_xticklabels(indices)
+
+    ### Dollar ticks
+    fmt = '${x:,.0f}'
+    tick = mtick.StrMethodFormatter(fmt)
+    ax.yaxis.set_major_formatter(tick) 
+    ax.tick_params(labelsize='large')
+    ###
+
+
+    ax.set_xticklabels(indices, rotation=45, horizontalalignment='right', fontsize=16)
+    ax.legend( (rects1[0], rects2[0], rects3[0], rects4[0]), ('All time', '2010-present', '2000-2010', '1990-2000') )
+    fig.savefig('./images/barplot-time.png', bbox_inches='tight')
+    return
+
