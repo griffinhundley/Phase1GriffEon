@@ -24,20 +24,19 @@ This analysis gives insight into expected return across 16 pure and hybrid genre
 The genre that offers the most potential for revenue is clearly the science fiction/action, adventure/comedy, and adventure/fantasy categories.  These Genres also cost the most to invest in.  The genre with the most potential to multiply a small investment is horror/mystery thriller.  These films are cheap to produce, but if they find an audience can multiply initial investment several times over.  Pure drama, comedy, or romance offer a safer bet, but less potential for huge gain. 
 
 ## Conclusions
-#### Based on the revealed highly skewed nature of profit in the movie business an entrant needs to tread carefully.  The benefits of a movie studio can transcend, in difficult to quantify ways, considerations of mere financial gain.  Cinema is a cultural force that can shape attitudes of millions of people.  Furthermore cinema offers merchandising opportunities for items related to a popular film.  These returns can dwarf the box office returns of a film.  These considerations are not treated here. 
+Based on the revealed highly skewed nature of profit in the movie business an entrant needs to tread carefully.  The benefits of a movie studio can transcend, in difficult to quantify ways, considerations of mere financial gain.  Cinema is a cultural force that can shape attitudes of millions of people.  Furthermore cinema offers merchandising opportunities for items related to a popular film.  These returns can dwarf the box office returns of a film.  These considerations are not treated here. 
 ### The decision maker must select the genre of film he wishes to produce with risk in mind.
-#### How much loss can a studio sustain?  This decision will determine the size of the budget and necessariliy the genre.  We identify three main paths forward:  1.  Highly risky science fiction and action productions that offer huge upside.  2.  Less risky romance or comedy movies that can reliably generate modest returns, or 3.  Low investment but potential huge returns on a movie in the horror/thriller genre.  
+How much loss can a studio sustain?  This decision will determine the size of the budget and necessariliy the genre.  We identify three main paths forward:  1.  Highly risky science fiction and action productions that offer huge upside.  2.  Less risky romance or comedy movies that can reliably generate modest returns, or 3.  Low investment but potential huge returns on a movie in the horror/thriller genre.  
 ### An executive must seek service from talented artists, and producers to maximize odds for success. 
-#### A talent recruitment/development program can identify young, capable artists before they will be able to command huge salaries can reduce initial investment and increase the odds of a highly profitable movie. 
+A talent recruitment/development program can identify young, capable artists before they will be able to command huge salaries can reduce initial investment and increase the odds of a highly profitable movie. 
 
 ## Next Steps:
-#### In the future it might be usefull to do analyses on traits of highly succesfull directors.  The director is the principal creative agent of a film.  Carefully selecting skilled directors is the most important personell decision that a studio makes.  This analysis deserves special time and attention.  
+In the future it might be usefull to do analyses on traits of highly succesfull directors.  The director is the principal creative agent of a film.  Carefully selecting skilled directors is the most important personell decision that a studio makes.  This analysis deserves special time and attention.  
 
 
 ## For More Information
 
-## Please review our full analysis in [our Jupyter Notebook](FinalNotebook.ipynb) 
-
+### Please review our full analysis in [our Jupyter Notebook](FinalNotebook.ipynb) 
 
 
 ## Contact Information
@@ -53,10 +52,10 @@ Eon Slemp
 ## Repository Structure
 
 ```
-├── README.md                           <- The top-level README for reviewers of this project
-├── FinalNotebook.ipynb   <- Narrative documentation of analysis in Jupyter notebook
-├── FInalNotebook.pdf         <- PDF version of project presentation
-├── data                                <- Both sourced externally and generated from code
-└── images                              <- Both sourced externally and generated from code
+├── README.md
+├── FinalNotebook.ipynb
+├── FInalNotebook.pdf
+├── data
+└── images
 ```
 
